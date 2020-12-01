@@ -3,12 +3,54 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 
 <body>
-    <p> loool </p>
+    <header>
+        <div>
+            <h1 id="title">Click me!</h1>
+        </div>
+    </header>
+
+    <div class="container">
+
+
+
+        <form id="myForm" action="">
+            <div class="input_block form-group">
+                <label for="fullname"></label>
+                <input type="text" placeholder="Enter Full Name" name="fullname" id="fullname">
+            </div>
+
+            <div class="input_block form-group">
+                <label for="email"></label>
+                <input type="email" placeholder="Enter email" name="email" id="email">
+            </div>
+            <div class="input_block form-group">
+                <label for="message"></label>
+                <textarea class="form-control" placeholder="Enter Wall Message" name="message" id="message"></textarea>
+            </div>
+
+            <div class="input_block form-group">
+                <input type="submit" value="Submit">
+            </div>
+
+        </form>
+
+        <div id="wall" class="container text-center bg-secondary">
+            <h1 id="boldWall"></h1>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+
 </body>
 
 </html>

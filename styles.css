@@ -1,0 +1,13 @@
+.container {
+    background-color: teal;
+    width: 100vh;
+    height: 100vh;
+}
+
+.input_block {
+    display: flex;
+}
+
+div {
+    display: block;
+}
