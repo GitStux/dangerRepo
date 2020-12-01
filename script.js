@@ -10,6 +10,9 @@ document.getElementById("myForm").addEventListener("submit", (event) => {
 
 
     confirm("Are you sure about this post:" + " " + newPar.innerHTML)
+
+    let titleName = event.target.elements["fullname"].value;
+    document.getElementById("title").innerHTML = titleName;
 })
 
 let theTitle = document.getElementById("title")
@@ -19,7 +22,6 @@ theTitle.onclick = changeTitle
 
 function changeTitle() {
     theTitle.style.backgroundColor = randomColors();
-
 }
 
 let colors = {
